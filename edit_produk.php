@@ -29,17 +29,17 @@ include 'koneksi.php';
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CRUD Produk dengan gambar - Gilacoding</title>
+    <title>CRUD Produk dengan gambar</title>
     <style type="text/css">
       * {
-        font-family: "Trebuchet MS";
+        font-family: "Helvetica";
       }
       h1 {
         text-transform: uppercase;
-        color: salmon;
+        color: #1f3c88;
       }
     button {
-          background-color: salmon;
+          background-color: #3d7ea6;
           color: #fff;
           padding: 10px;
           text-decoration: none;
@@ -59,7 +59,7 @@ include 'koneksi.php';
       box-sizing: border-box;
       background: #f8f8f8;
       border: 2px solid #ccc;
-      outline-color: salmon;
+      outline-color: #3d7ea6;
     }
     div {
       width: 100%;
@@ -101,7 +101,7 @@ include 'koneksi.php';
         </div>
         <div>
           <label>Gambar Produk</label>
-          <img src="../gambar<?php echo $data['gambar_produk']; ?>" style="width: 120px;float: left;margin-bottom: 5px;">
+          <img src="public_html<?php echo $data['gambar_produk']; ?>" style="width: 120px;float: left;margin-bottom: 5px;">
           <input type="file" name="gambar_produk" />
           <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah gambar produk</i>
         </div>

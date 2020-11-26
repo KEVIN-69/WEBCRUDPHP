@@ -19,7 +19,7 @@ if($gambar_produk != "") {
   $angka_acak     = rand(1,999);
   $nama_gambar_baru = $angka_acak.'-'.$gambar_produk; //menggabungkan angka acak dengan nama file sebenarnya
         if(in_array($ekstensi, $ekstensi_diperbolehkan) === true)  {     
-                move_uploaded_file($file_tmp, '../gambar'.$nama_gambar_baru); //memindah file gambar ke folder gambar
+                move_uploaded_file($file_tmp, 'public_html'.$nama_gambar_baru); //memindah file gambar ke folder gambar
                   // jalankan query INSERT untuk menambah data ke database pastikan sesuai urutan (id tidak perlu karena dibikin otomatis)
                   $query = "INSERT INTO produk (nama_produk, deskripsi, harga_beli, harga_jual, gambar_produk) VALUES ('$nama_produk', '$deskripsi', '$harga_beli', '$harga_jual', '$nama_gambar_baru')";
                   $result = mysqli_query($koneksi, $query);

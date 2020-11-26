@@ -18,7 +18,7 @@ include 'koneksi.php';
     $angka_acak     = rand(1,999);
     $nama_gambar_baru = $angka_acak.'-'.$gambar_produk; //menggabungkan angka acak dengan nama file sebenarnya
     if(in_array($ekstensi, $ekstensi_diperbolehkan) === true)  {
-                  move_uploaded_file($file_tmp, '../gambar'.$nama_gambar_baru); //memindah file gambar ke folder gambar
+                  move_uploaded_file($file_tmp, 'public_html'.$nama_gambar_baru); //memindah file gambar ke folder gambar
                       
                     // jalankan query UPDATE berdasarkan ID yang produknya kita edit
                    $query  = "UPDATE produk SET nama_produk = '$nama_produk', deskripsi = '$deskripsi', harga_beli = '$harga_beli', harga_jual = '$harga_jual', gambar_produk = '$nama_gambar_baru'";

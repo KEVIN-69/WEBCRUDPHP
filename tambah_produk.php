@@ -8,14 +8,14 @@
     <title>CRUD Produk</title>
     <style type="text/css">
       * {
-        font-family: "Trebuchet MS";
+        font-family: "Helvetica";
       }
       h1 {
         text-transform: uppercase;
-        color: salmon;
+        color: #1f3c88;
       }
     button {
-          background-color: salmon;
+          background-color: #3d7ea6;
           color: #fff;
           padding: 10px;
           text-decoration: none;
@@ -35,7 +35,7 @@
       box-sizing: border-box;
       background: #f8f8f8;
       border: 2px solid #ccc;
-      outline-color: salmon;
+      outline-color: #3d7ea6;
     }
     div {
       width: 100%;
